@@ -10,11 +10,11 @@ void KruskalMstSolver::unionCombine(int vertex, int vertex_) const {
 
 void KruskalMstSolver::generateMst(const std::vector<WeightEdge>& edges) {
 	result.clear();
-	std::priority_queue<const SortedEdge> pq;
+	std::priority_queue<SortedEdge> pq;
 	int maxVertex = -1;
 	for (auto edge : edges) {
 		maxVertex = std::max(std::max(edge.getFrom(), edge.getTo()), maxVertex);
-		pq.push(*static_cast<const SortedEdge*>(&edge));
+		pq.push(SortedEdge(edge.getFrom(), edge.getTo(), edge.getDistance()));
 	}
 	try { unionFind = new int[maxVertex]; }
 	catch (...) {
