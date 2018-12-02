@@ -19,10 +19,12 @@ public:
 	GraphMstBuilder(): edges(new std::vector<WeightEdge>) {}
 	GraphMstBuilder& addEdge(int from, int to, int dist) {
 		edges->push_back(WeightEdge(from, to, dist));
+		return *this;
 	}
 
 	GraphMstBuilder& setMstSolver(IMstSolver * mstSolver) {
 		mstSolverPtr = mstSolver;
+		return *this;
 	}
 
 	GraphMst* build() {
