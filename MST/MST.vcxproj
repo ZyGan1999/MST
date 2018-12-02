@@ -151,16 +151,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h" />
+    <ClCompile Include="BasicEdge.cpp" />
+    <ClCompile Include="BasicGraph.cpp" />
+    <ClCompile Include="KruskalMstSolver.cpp" />
+    <ClCompile Include="MST.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SortedEdge.cpp" />
+    <ClCompile Include="WeightEdge.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MST.cpp" />
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
+    <ClInclude Include="BasicEdge.h" />
+    <ClInclude Include="BasicGraph.h" />
+    <ClInclude Include="GraphMst.h" />
+    <ClInclude Include="IMstSolver.h" />
+    <ClInclude Include="KruskalMstSolver.h" />
+    <ClInclude Include="SortedEdge.h" />
+    <ClInclude Include="WeightEdge.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,16 +15,46 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="MST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BasicEdge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SortedEdge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WeightEdge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicGraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KruskalMstSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicEdge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SortedEdge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicGraph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WeightEdge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IMstSolver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KruskalMstSolver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphMst.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
