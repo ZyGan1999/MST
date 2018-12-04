@@ -1,4 +1,4 @@
-#include "KruskalMstSolver.h"
+﻿#include "KruskalMstSolver.h"
 
 int KruskalMstSolver::findUnion(int vertex) const {
 	return vertex == unionFind[vertex] ? vertex : findUnion(unionFind[vertex]);
@@ -31,8 +31,9 @@ void KruskalMstSolver::generateMst(const std::vector<WeightEdge>& edges) {
 			result.push_back(topEdge);
 		}
 	}
-
-	delete unionFind;
+	
+	// delete unionFind;
+	// 若不注释此语句，则程序无法正常运行，尚不清楚原因
 }
 
 const std::vector<WeightEdge>& KruskalMstSolver::getMstEdges() const {
