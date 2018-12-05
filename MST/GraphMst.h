@@ -1,6 +1,12 @@
-#pragma once
+﻿#pragma once
 #include "IMstSolver.h"
 #include "BasicGraph.h"
+
+/*
+GraphMst为解决MST问题的图结构，继承于BasicGraph
+其构造函数私有，只能通过其友元类GraphMstBuilder来创建
+目的是防止图中的边集被修改（边集为只读的）
+*/
 
 class GraphMstBuilder;
 

@@ -1,6 +1,10 @@
-#pragma once
+﻿#pragma once
 #include "WeightEdge.h"
 #include <vector>
+
+/*
+最基本的图，只含有边的集合，其构造函数为保护的，只能通过其派生类创建
+*/
 
 class BasicGraph {
 public:

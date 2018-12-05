@@ -1,10 +1,14 @@
-#pragma once
+﻿#pragma once
 #include "IMstSolver.h"
 #include "SortedEdge.h"
 #include <set>
 #include <queue>
 #include <algorithm>
 #include <exception>
+
+/*
+使用kruskal算法实现的MstSolver
+*/
 
 class KruskalMstSolver sealed: public IMstSolver {
 public:

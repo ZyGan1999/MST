@@ -1,4 +1,8 @@
-#pragma once
+﻿#pragma once
+
+/*
+最基本的边，只有起点和终点
+*/
 
 class BasicEdge {
 public:

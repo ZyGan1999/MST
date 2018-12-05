@@ -1,5 +1,9 @@
-#pragma once
+﻿#pragma once
 #include "WeightEdge.h"
+
+/*
+可供排序的边，在优先队列中使用这种边
+*/
 
 class SortedEdge : public WeightEdge {
 public:
